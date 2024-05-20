@@ -140,8 +140,11 @@ When you create a Docker image using a Dockerfile, each instruction you include 
     mkdir kemo
 
 anurag@anurag:~$ cd kemo
+
 anurag@anurag:~/kemo$ touch Dockerfile
+
 anurag@anurag:~/kemo$ vi Dockerfile
+
 FROM Ubuntu:23.04
 
 anurag@anurag:~/kemo$ sudo docker image build -t myoperation:01 .
