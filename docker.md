@@ -216,10 +216,15 @@ hello-world       latest    d2c94e258dcb   9 months ago    13.3kB
 docker/whalesay   latest    6b362a9f73eb   8 years ago     247MB
 
 anurag@anurag:~/kemo$ vi dockerfile
+
 RUN pwd>/tmp/1stpwd.txt
+
 RUN cd /tmp/
+
 RUN pwd>/tmp/2ndpwd.txt
+
 anurag@anurag:~/kemo$ sudo docker image build -t myoperation:3.1 .
+
 Sending build context to Docker daemon  2.048kB
 Step 1/5 : FROM ubuntu:23.04
  ---> afd5915f3c51
